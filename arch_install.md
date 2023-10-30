@@ -16,7 +16,7 @@ format the first efi partition by using `mkfs.fat -F32 /dev/sda1`
 then for filesystem
 `mkfs.ext4 /dev/sda2`
 
-# 1.10
+# 1.10.
 
 # Mounting file systems
 
