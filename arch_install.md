@@ -16,7 +16,7 @@ format the first efi partition by using `mkfs.fat -F32 /dev/sda1`
 then for filesystem
 `mkfs.ext4 /dev/sda2`
 
-# 1.10.
+# 1.10
 
 # Mounting file systems
 
@@ -53,13 +53,15 @@ nano /mnt/etc/fstab
 
 make sure to check resulting fstab file in nano and edit if any errors
 
-3.2
+# 3.2
+
 to change root into new system
 I ran
 
 `arch-chroot /mnt`
 
-3.3 set time zone
+# 3.3 set time zone
+
 find the time zones by using the command:
 
 `cd /usr/share/zoneinfo`
@@ -71,7 +73,7 @@ and
 
 `hwclock --systohc`
 
-3.4
+# 3.4
 
 I had some issues using the nano command in chroot so I went online and saw that I must have
 ommited it when doing the pacstrap step.
@@ -96,7 +98,7 @@ entered
 `LANG=en_US.UTF-8`
 into the file and saved
 
-3.5
+# 3.5
 
 create hostname file
 using the commands
@@ -121,17 +123,11 @@ install networkmanager and enable it using the command
 `systemctl enable NetworkManager`
 ```
 
-3.6
+# 3.6
+
 i changed password with `passwd`
 
 after finishing the documentation for archlinux i found a helpful youtube video for adding the plasma desktop environment. At the 18:07 minute mark
 Link=<https://www.youtube.com/watch?v=FFXRFTrZ2Lk&ab_channel=EF-LinuxMadeSimple>
 
 i came upon an issue when installing zsh with pacman, it said packages weren't installed correctely due to packagekit timing out. I saw someone asking if they actually need packagekit... and thought to myself, I guess I don't? So i simply uninstalled it and problem was solved.
-
-# assignment
-
-cat /etc/passwd for users
-ip addresss show
-
-sudo cat /etc/sudoers
