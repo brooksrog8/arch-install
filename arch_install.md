@@ -35,7 +35,7 @@ mount /dev/sda1 /mnt/boot/efi
 
 # 2.1-2.2 Selecting mirrors and install essential packages
 
-nano into /etc/pacman.d
+nano into /etc/pacman.d or your favorite text editor
 
 ```shell
  pacstrap -K /mnt base linux linux-firmware
@@ -45,7 +45,7 @@ nano into /etc/pacman.d
 
 # 3.1 Fstab
 
-i ran this command
+Run this command
 `cfdisk`
 to look at devices
 then
@@ -67,7 +67,7 @@ I ran
 
 # 3.3 set time zone
 
-find the time zones by using the command:
+find the time zones by using:
 
 `cd /usr/share/zoneinfo`
 and select correct zone.
@@ -130,9 +130,7 @@ install networkmanager and enable it using the command
 
 # 3.6
 
-i changed password with `passwd`
+ Change your password with `passwd`
 
-after finishing the documentation for archlinux i found a helpful youtube video for adding the plasma desktop environment. At the 18:07 minute mark
+after finishing the documentation for archlinux heres a helpful youtube video for adding the plasma DE. At 18:07 minute mark
 Link=<https://www.youtube.com/watch?v=FFXRFTrZ2Lk&ab_channel=EF-LinuxMadeSimple>
-
-i came upon an issue when installing zsh with pacman, it said packages weren't installed correctely due to packagekit timing out. I saw someone asking if they actually need packagekit... and thought to myself, I guess I don't? So i simply uninstalled it and problem was solved.
