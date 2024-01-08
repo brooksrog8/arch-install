@@ -132,5 +132,4 @@ install networkmanager and enable it using the command
 
  Change your password with `passwd`
 
-after finishing the documentation for archlinux heres a helpful youtube video for adding the plasma DE. At 18:07 minute mark
-Link=<https://www.youtube.com/watch?v=FFXRFTrZ2Lk&ab_channel=EF-LinuxMadeSimple>
+After finishing the documentation for archlinux, all that's left is to install your favorite DE
