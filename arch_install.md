@@ -1,3 +1,8 @@
+# The following is a walkthrough of my installation of archLinux. 
+# I considered parts 1.1-1.8 as Pre installation.
+# To see the archLinux wiki click here: https://wiki.archlinux.org/title/Installation_guide
+
+
 # 1.9
 
 # Partitioning
